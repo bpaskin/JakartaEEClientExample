@@ -1,0 +1,16 @@
+    <?xml version="1.0" encoding="UTF-8"?>
+    <client description="HelloWorld EJB Client">
+
+        <!-- Enable features needed for EJB client -->
+        <featureManager>
+            <feature>jakartaeeClient-10.0</feature>
+        </featureManager>
+
+        <!-- Configure IIOP client ORB -->
+        <orb id="defaultOrb" nameService="corbaname::lovecraft:2814"/>
+        
+        <!-- Logging configuration -->
+        <logging consoleLogLevel="INFO"  traceSpecification="*=info:com.ibm.example.*=all:Naming=all:IIOP=all:org.apache.yoko.*=all:yoko.verbose.*=all"/>
+        
+        <application id="HellowWorldClient" name="HellowWorldClient" type="ear" location="helloworldclient-1.0.ear"/>
+    </client>
