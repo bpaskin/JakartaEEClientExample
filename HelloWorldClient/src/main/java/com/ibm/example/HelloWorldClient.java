@@ -25,11 +25,8 @@ public class HelloWorldClient {
         InitialContext ctx = new InitialContext();
         
         // Lookup the remote EJB
-        // The JNDI name follows the pattern: ejb/[app-name]/[module-name]/[bean-name]![interface-name]
         String jndiName = "java:global/HelloWorldServer/HelloWorldBean!com.ibm.example.HelloWorldRemote";
-        // String jndiName ="com.ibm.example.HelloWorldRemote";
-        // String jndiName = "HelloWorldBean!com.ibm.example.HelloWorldRemote";
-        //String jndiName = "ejb/HelloWorldServer/HelloWorldServer.war/HelloWorldBean#com.ibm.example.HelloWorldRemote";
+
         try {
             helloWorldRemote = (HelloWorldRemote) ctx.lookup(jndiName);
             System.out.println("Successfully looked up HelloWorld EJB");

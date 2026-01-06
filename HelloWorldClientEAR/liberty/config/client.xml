@@ -7,10 +7,10 @@
         </featureManager>
 
         <!-- Configure IIOP client ORB -->
-        <orb id="defaultOrb" nameService="corbaname::lovecraft:2814"/>
+        <orb id="defaultOrb" nameService="corbaname::localhost:2814"/>
         
         <!-- Logging configuration -->
-        <logging consoleLogLevel="INFO"  traceSpecification="*=info:com.ibm.example.*=all:Naming=all:IIOP=all:org.apache.yoko.*=all:yoko.verbose.*=all"/>
+        <logging traceSpecification="*=info:Naming=all:IIOP=all:org.apache.yoko.*=all:yoko.verbose.*=all" maxFileSize="20" maxFiles="10" />        
         
         <application id="HellowWorldClient" name="HellowWorldClient" type="ear" location="helloworldclient-1.0.ear"/>
     </client>
