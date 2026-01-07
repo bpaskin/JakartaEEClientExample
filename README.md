@@ -129,8 +129,7 @@ The standalone client tests:
 - Edge cases (null/empty parameters)
 
 output should be similar to this when running the client:
-```
-ldClient             
+```             
 Launching HelloWorldClient (WebSphere Application Server 25.0.0.12/wlp-1.0.108.cl251220251117-0302) on OpenJDK 64-Bit Server VM, version 21.0.9+10-LTS (en_US)
 [AUDIT   ] CWWKE0907I: The client HelloWorldClient has been launched.
 [INFO    ] TRAS0018I: The trace state has been changed. The new trace state is *=info:IIOP=all:Naming=all:com.ibm.example.*=all:org.apache.yoko.*=all:yoko.verbose.*=all.
